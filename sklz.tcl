@@ -1,7 +1,7 @@
 #                 STANDARD INTRO                \
  CLIENT: XiRCON Communicator                    \
  SCRIPT: TCL                                    \
- AUTHOR: Sn|p3r A.K.A. Phlud                    \
+ AUTHOR: Sniper / Phlud                         \
  SCRIPT NAME: sklz.tcl                          \
  PLATFORM: WINBLOWS                             \
  STATUS: Final                                  \
