@@ -263,8 +263,8 @@ add2hash [string tolower [nick]] [user]@[host]
  if { $what == "DCC" && $ctcp == "1" } { complete }
  if { $what == "DCC" && $ctcp == "0" } { set ctcp 5 }
  if { $what == "ACTION" } {
-        if { [string match #* [lindex [join [args]] 0]] } { echo "\af5* [nick] [join [lrange [args] 2 end]]" channel [lindex [join [args]] 0] }
-        if { ![string match #* [lindex [join [args]] 0]] } { echo "\af5* [nick] [join [lrange [args] 2 end]]" query [lindex [join [args]] 0] }
+        if { [string match # * [lindex [join [args]] 0]] } { echo "\af5* [nick] [join [lrange [args] 2 end]]" channel [lindex [join [args]] 0] }
+        if { ![string match # * [lindex [join [args]] 0]] } { echo "\af5* [nick] [join [lrange [args] 2 end]]" query [lindex [join [args]] 0] }
         complete
  }
 
@@ -272,7 +272,7 @@ add2hash [string tolower [nick]] [user]@[host]
 
 alias INV {
 set chan [channel]
-if { [string match #* [lindex [join [args]] 0]] } { foreach list [nicks [lindex [join [args]] 0]] {
+if { [string match # * [lindex [join [args]] 0]] } { foreach list [nicks [lindex [join [args]] 0]] {
 if { [string match +* $list] } { set list [lindex [split $list +] 1] }
 regsub @ "$list" "" list
 /raw invite $list $chan
