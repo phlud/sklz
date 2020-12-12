@@ -1,5 +1,5 @@
 # sklz
-I made this script with some friends well over a decade ago.
+I made this script with some friends 20+ years ago.
 Intended to be used with the XiRCON client.
 
 It has lots of features (auto-away, shit list, etc.) and aliases, mostly for IRC ops.
